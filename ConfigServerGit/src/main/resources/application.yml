@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  zipkin:
+    enabled: true
+    base-url: ${ZIPKIN_URL}
+    service:
+      name: config-serber-git-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/tolgatekk/config-server-repo12.git"
+          default-label: main
+          skip-ssl-validation: true
+          username: tolgatekk
+          password: ${GIT_JAVA12_KEY} #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
+

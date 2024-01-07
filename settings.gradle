@@ -1,0 +1,8 @@
+rootProject.name = 'Java12MicroService'
+include 'AuthMicroService'
+include 'UserProfileMicroService'
+include 'ConfigServer'
+include 'ConfigServerGit'
+include 'ApiGatewayService'
+include 'ttt'
+
